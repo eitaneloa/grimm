@@ -1,0 +1,30 @@
+
+body, .wufoo {
+	font-family: arial;
+}
+/*
+.pook1 {
+	background-image:url('logo.jpg');
+	height:427px;	
+}
+
+*/
+
+.buttons div a {
+	display:none !important;
+}
+
+.wufoo input.btTxt {
+color: white;
+background: red;
+border: 0;
+padding:7px 15px;
+font-size:16px;
+font-family:arial;
+margin:0;
+}
+
+
+a[href="https://master.wufoo.com/forms/m7p0x3/def/field1=eitanel.wufoo.com/forms/-/"] {
+	opacity:0;
+}

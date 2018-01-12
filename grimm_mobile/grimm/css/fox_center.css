@@ -1,0 +1,632 @@
+@font-face {
+    font-family: 'Arbela';
+    src: url('fonts/arbelhagildareg.menukad-webfont.eot');
+    src: url('fonts/arbelhagildareg.menukad-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/arbelhagildareg.menukad-webfont.woff') format('woff'),
+         url('fonts/arbelhagildareg.menukad-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+	#button1 { background: url('../images/buttons/button1.png') no-repeat -9999px -9999px; }
+	#button2 { background: url('../images/buttons/button2.png') no-repeat -9999px -9999px; }
+	#button3 { background: url('../images/buttons/button3.png') no-repeat -9999px -9999px; }
+	#button4 { background: url('../images/buttons/button4.png') no-repeat -9999px -9999px; }
+	#button5 { background: url('../images/buttons/button5.png') no-repeat -9999px -9999px; }
+	#button6 { background: url('../images/buttons/button6.png') no-repeat -9999px -9999px; }
+	#button7 { background: url('../images/buttons/button7.png') no-repeat -9999px -9999px; }
+	#button8 { background: url('../images/buttons/button8.png') no-repeat -9999px -9999px; }
+	#button9 { background: url('../images/buttons/button9.png') no-repeat -9999px -9999px; }
+	#button10 { background: url('../images/buttons/button10.png') no-repeat -9999px -9999px; }
+	
+
+
+#draggable img, #close1, #close2, #close3, #close4, #close5 {
+	visibility: hidden; 
+}
+
+#draggable img:hover {
+	cursor: grab;
+	cursor: -moz-grab;
+	cursor: -webkit-grab;
+}
+
+body {
+	/*direction: rtl;*/
+	text-align: right;
+	font-family: Arbela;
+	font-weight: regular;
+	font-size: 15px;
+}
+
+
+#bg1 {
+	z-index: 50;
+	/*top:0;
+	 left:0;*/
+	background: url('../images/fox/foxh099.png') no-repeat;
+	/*background-size: contain;*/
+	background-color: #dcdcdc;
+	background-position: center 25px;
+	background-size: auto 860px;
+}
+
+
+.zoombut, .zoomtrans {
+	position: absolute !important;
+	left: -3px;
+	width: 23px;
+	height: 22px;
+	background: url('../images/buttons/button4.png') no-repeat;
+}
+
+
+.zoombut:hover, #close1:hover, #close2:hover, #close3:hover, #close4:hover, #close5:hover {
+	cursor: pointer;
+	background: url('../images/buttons/button5.png') no-repeat;
+}
+
+#close1, #close2, #close3, #close4, #close5 {
+	margin: 10px;
+	width: 36px;
+	height: 36px;
+	background: url('../images/buttons/button_x2.png') no-repeat;
+	right:0;
+
+}
+
+#close1:hover, #close2:hover, #close3:hover, #close4:hover, #close5:hover {
+	cursor: pointer;
+	background: url('../images/buttons/button_x1.png') no-repeat;
+}
+
+#troll, #troll2, #troll3, #troll4, #troll5 {
+	width: 14px;
+	height: 15px;
+}
+
+li div {
+	width: 14px;
+	height: 14px;
+	background: url('../images/buttons/button7.png') no-repeat 0 center;
+	margin: 6px;
+}
+
+li.clickable div:hover {
+	background-color: white !important;
+	cursor: pointer
+}
+
+#bg1 {
+	/*top:-.6%;*/
+}
+
+.containter11 {
+	margin: 0 auto;
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+
+#chook {
+
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	margin: 0 auto;
+}
+
+
+#close1, #close2, #close3, #close4, #close5 {
+	position: absolute;
+}
+
+#onion {
+	top: 11%;
+	margin: 0 auto;
+	width: 0;
+	height: 20px;
+	margin: 0 auto;
+	position: relative;
+	left: 0;
+	left: 274px;
+	top: 0;
+}
+
+
+div.menu_eitan {
+	position: absolute;/*left:94px;*/
+	left: 50px;
+	top: 2px;
+	width: 240px;
+}
+
+.menu_eitan div {
+	visibility: hidden;
+	line-height: 15px;
+	width: 240px;
+	margin-top: 16px;
+}
+
+.menu_eitan .about {
+	padding-bottom: 4px;
+}
+
+.about:hover {
+	cursor: pointer;
+	border-bottom: 2px solid black !important;
+}
+
+div.image {
+	background-image: url('../images/buttons/button9.png');
+	width: 18px;
+	height: 19px;
+}
+
+div.image:hover {
+	background-image: url('../images/buttons/button10.png');
+	cursor: pointer;
+}
+	
+
+#reka {
+	width: 100%;
+	height: 100%;
+	background-color: #dcdcdc;
+	visibility: hidden;
+}
+
+#scroll {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	font-size: 12px;
+	width: 50px;
+}
+.dots {
+	margin-top: 50px;
+	padding-top: 50px;
+	direction: rtl;
+}
+
+.dots ul {
+	position: relative;
+	left: -7px;
+}
+
+
+/* Preloader */
+
+
+#preloader {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #dcdcdc; /* change if the mask should have another color then white */
+	z-index: 99; /* makes sure it stays on top */
+}
+
+#status {
+	width: 100px;
+	height: 50px;
+	position: absolute;
+	left: 50%;
+	left: -webkit-calc(50% - 50px); /* Firefox 4+ */
+	left: -moz-calc(50% - 50px); /* Firefox 4+ */
+	left: calc(50% - 50px); /* IE9+ and future browsers */
+	top: 50%; /* centers the loading animation vertically one the screen */
+	top: -webkit-calc(50% + 270px); /* Firefox 4+ */
+	top: -moz-calc(50% + 270px); /* Firefox 4+ */
+	top: calc(50% + 270px); /* IE9+ and future browsers */
+	/* background-image:url('../images/preload/status.gif'); path to your loading animation */
+	background-repeat: no-repeat;
+	background-position: center;
+	/*background-color:red;*/
+	line-height: 50px;
+	text-align: center;
+	direction: rtl;
+
+}
+#status1 {
+	width: 665px;
+	height: 606px;
+	position: absolute;
+	left: 50%;
+	left: -webkit-calc(50% - 332px); /* Firefox 4+ */
+	left: -moz-calc(50% - 332px); /* Firefox 4+ */
+	left: calc(50% - 332px); /* IE9+ and future browsers */
+	/* centers the loading animation horizontally one the screen */
+	top: 50%; /* centers the loading animation vertically one the screen */
+	top: -webkit-calc(50% - 377px); /* Firefox 4+ */
+	top: -moz-calc(50% - 377px); /* Firefox 4+ */
+	top: calc(50% - 377px); /* IE9+ and future browsers */
+	background-image: url('../images/grimm_big.png'), url('../images/circle_big.png'); /* path to your loading animation */
+	background-repeat: no-repeat;
+	background-position: center;
+	}
+
+.menu_eitan a {
+	color: black !important;
+	text-decoration: none;
+}
+
+.menu_eitan a:hover {
+	padding-bottom: 4px;
+	border-bottom: 2px solid black !important;
+}
+
+.onion_wrapper {
+
+	width: 100%;
+	top: 27px;
+	margin: 0 auto;
+}
+
+#name1, #name2, #name3 {
+	height: 29px;
+	position: absolute;
+	right: 50%;
+	right: -webkit-calc(50% - 325px); /* Firefox 4+ */
+	right: -moz-calc(50% - 325px); /* Firefox 4+ */
+	right: calc(50% - 325px); /* IE9+ and future browsers */
+	top: 50%; /* centers the loading animation vertically one the screen */
+	top: -webkit-calc(50% + 336px); /* Firefox 4+ */
+	top: -moz-calc(50% + 336px); /* Firefox 4+ */
+	top: calc(50% + 336px); /* IE9+ and future browsers */
+	/* background-image:url('../images/preload/status.gif'); path to your loading animation */
+	background-repeat: no-repeat;
+	background-position: center;
+	/*background-color:red;*/
+	line-height: 29px;
+	text-align: center;
+	/*opacity:.5;*/
+}
+
+
+
+#three {
+	width: 665px;
+	height: 141px;
+	position: absolute;
+	right: 50%;
+	right: -webkit-calc(50% - 334px); /* Firefox 4+ */
+	right: -moz-calc(50% - 334px); /* Firefox 4+ */
+	right: calc(50% - 334px); /* IE9+ and future browsers */
+	top: 50%; /* centers the loading animation vertically one the screen */
+	top: -webkit-calc(50% + 163px); /* Firefox 4+ */
+	top: -moz-calc(50% + 163px); /* Firefox 4+ */
+	top: calc(50% + 163px); /* IE9+ and future browsers */
+	background-repeat: no-repeat;
+	background-position: center;
+	line-height: 35px;
+	text-align: center;
+	background-image: url('../images/three_stories.png'); /* path to your loading animation */
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+
+#reka1 {
+    width:1920px;
+    height:982px;
+    position:absolute;
+    background-repeat:no-repeat;
+    background-position:center;
+    border:1px solid red;
+    box-sizing:border-box;
+    background-image:url('../images/reka.png'); /* path to your loading animation */
+
+}
+
+.reka2 {
+
+    background-image:url('../images/reka2.png') !important; /* path to your loading animation */
+
+}
+
+
+
+#name1 a{
+color:black;
+padding: 2px 8px 1px;
+}
+
+
+
+
+#name1 a:hover {
+	background-color: red;
+color: white;
+text-decoration: none;
+
+}
+
+
+.large-font {
+	font-size:29px;
+}
+
+span.star {
+	padding: 0px 8px 0;
+position: relative;
+top: 7px;
+}
+
+
+.onion_wrapper1 {
+	
+	
+	width:100%;
+	top:50%; 
+	margin:0 auto;
+}
+
+
+#onion1 {
+	top:11%;
+	margin: 0 auto;
+	width:0;
+	height:20px;
+	margin:0 auto;
+	position:relative;
+	left:311px;
+	top:-341px;
+	
+}
+
+#onion1 {
+top:94px;	
+}
+
+
+#status1.story_4 {
+    background-image:url('../images/preload/cat.gif'), url('../images/circle_big.png'); /* path to your loading animation */
+}
+
+#status1.story_1, #status1.click_1 {
+    background-image:url('../images/wolf_static.png'), url('../images/circle_big.png'); /* path to your loading animation */
+}
+
+#status1.story_2, #status1.click_2 {
+    background-image:url('../images/horse_static.png'), url('../images/circle_big.png'); /* path to your loading animation */
+}
+
+#status1.story_3, #status1.click_3 {
+    background-image:url('../images/cat_static.png'), url('../images/circle_big.png'); /* path to your loading animation */
+}
+
+
+#onion {
+	top:48px;
+}
+
+.logoa {
+	width:146px;
+	height:132px;
+ background-image:url('../images/grimm_small.png'); 
+ position: absolute;
+top: -41px;
+left: 41px;	
+}
+
+a:hover .logoa {
+	background-image:url('../images/grimm_small.png'), url('../images/circle_small.png');
+}
+.zooma {
+	position:relative;left:6px;
+}
+
+.dots {
+	margin-top: 50px;
+padding-top: 62px;
+
+margin-right: -34px;
+}
+
+.note {
+	
+	width:200px;
+	height:20px;
+	position:relative;
+ right:40%;
+    right: -webkit-calc(50% - 101px); /* Firefox 4+ */
+    right: -moz-calc(50% - 101px); /* Firefox 4+ */
+    right: calc(50% - 101px); /* IE9+ and future browsers */ 	
+    top:556px ;
+	text-align:center;
+}
+
+#hovers1 { 
+	background-repeat:no-repeat;
+	background-position:-9999px -9999px;	
+	background-image: url('../images/preload/cat.gif'), url('../images/preload/wolf.gif'); 
+	}
+
+#hovers2 { 
+	background-repeat:no-repeat;
+	background-position:-9999px -9999px;	
+	background-image: url('../images/cat_static.png'), url('../images/wolf_static.png'); 
+	}
+	
+	#hovers3 { 
+	background-repeat:no-repeat;
+	background-position:-9999px -9999px;	
+	background-image: url('../images/preload/horse.gif'), url('../images/horse_static.png'); 
+	}
+
+@media (max-width: 1440px) {
+				
+
+	#status1 {
+		width: 532px;
+		height: 485px;
+		left: -webkit-calc(50% - 267px); /* Firefox 4+ */
+		left: -moz-calc(50% - 267px); /* Firefox 4+ */
+		left: calc(50% - 267px); /* IE9+ and future browsers */
+		top: -webkit-calc(50% - 327px); /* Firefox 4+ */
+		top: -moz-calc(50% - 327px); /* Firefox 4+ */
+		top: calc(50% - 327px); /* IE9+ and future browsers */
+		background-image: url('../images/grimm_big.png'), url('../images/circle_big.png'); /* path to your loading animation */
+		background-size: contain;
+	}
+
+
+
+	#three {
+		width: 532px;
+		height: 113px;
+		right: -webkit-calc(50% - 267px); /* Firefox 4+ */
+		right: -moz-calc(50% - 267px); /* Firefox 4+ */
+		right: calc(50% - 267px); /* IE9+ and future browsers */
+		top: -webkit-calc(50% + 102px); /* Firefox 4+ */
+		top: -moz-calc(50% + 102px); /* Firefox 4+ */
+		top: calc(50% + 102px); /* IE9+ and future browsers */
+		background-size: contain;
+		background-repeat:no-repeat;
+	}
+
+	.large-font {
+		font-size: 24px;
+	}
+
+
+	#name1, #name2, #name3 {
+		height: 29px;
+		position: absolute;
+		right: 50%;
+		right: -webkit-calc(50% - 274px); /* Firefox 4+ */
+		right: -moz-calc(50% - 274px); /* Firefox 4+ */
+		right: calc(50% - 274px); /* IE9+ and future browsers */
+		top: 50%; /* centers the loading animation vertically one the screen */
+		top: -webkit-calc(50% + 244px); /* Firefox 4+ */
+		top: -moz-calc(50% + 244px); /* Firefox 4+ */
+		top: calc(50% + 244px); /* IE9+ and future browsers */
+		/* background-image:url('../images/preload/status.gif'); path to your loading animation */
+		background-repeat: no-repeat;
+		background-position: center;
+		/*background-color:red;*/
+		line-height: 29px;
+		text-align: center;
+		/*opacity:.5;*/
+	}
+
+
+	div.menu_eitan {
+		left: -50px;
+		top: 0;
+	}
+		
+		
+
+	#bg1 {
+
+		background-position: center -37px;
+	}		
+
+
+	.onion_wrapper {
+
+		top: -35px;
+		margin: 0 auto;
+	}
+	
+	#status {
+	
+	top: -webkit-calc(50% + 180px); /* Firefox 4+ */
+	top: -moz-calc(50% + 180px); /* Firefox 4+ */
+	top: calc(50% + 180px); /* IE9+ and future browsers */
+
+}
+
+#name1, #name2, #name3 {
+	
+	right: -webkit-calc(50% - 282px); /* Firefox 4+ */
+	right: -moz-calc(50% - 282px); /* Firefox 4+ */
+	right: calc(50% - 282px); /* IE9+ and future browsers */
+
+}
+
+
+
+					}
+
+#status {
+	display:none;
+} 
+
+
+
+
+@media (max-width: 480px) {
+
+
+	
+	
+	#bg1 {
+
+		background-position: center center;
+		background-size: auto 487px;
+
+	}	
+
+		#status1 {
+		width: 312px;
+		height: 245px;
+		left: -webkit-calc(50% - 162px);
+		left: -moz-calc(50% - 162px);
+		left: calc(50% - 162px);
+		top: -webkit-calc(50% - 218px);
+		top: -moz-calc(50% - 218px);
+		top: calc(50% - 218px);
+}
+
+
+#three {
+width: 332px;
+height: 65px;
+right: -webkit-calc(50% - 162px);
+right: -moz-calc(50% - 162px);
+right: calc(50% - 162px);
+top: -webkit-calc(50%);
+top: -moz-calc(50%);
+top: calc(50% );
+background-size: contain;
+background-repeat: no-repeat;
+}
+
+span.star {
+display: none;
+}
+
+#name1 a {
+display: block;
+padding: 5px 8px 5px;
+
+}
+
+#name1 {
+	right: -webkit-calc(50% - 101px);
+right: -moz-calc(50% - 101px);
+right: calc(50% - 101px);
+top: -webkit-calc(50% + 80px);
+top: -moz-calc(50% + 80px);
+top: calc(50% + 80px);
+}
+
+.note {top:316px;}
+
+.note span {display:none;}
+
+#status {
+top: -webkit-calc(50% + 30px);
+top: -moz-calc(50% + 30px);
+top: calc(50% + 30px);
+}
+
+}
